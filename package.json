@@ -1,0 +1,31 @@
+{
+  "name": "soundscape-player-creative-workshop",
+  "version": "0.1.0",
+  "description": "Web-based audio player for SOUNDSCAPE Creative Workshop Series",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoundscapeLab-Macau/soundscape-player-creative-workshop.git"
+  },
+  "keywords": [
+    "Soundscape",
+    "WebPlayer",
+    "Workshop",
+    "Creativity"
+  ],
+  "author": "Gerald Estadieu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoundscapeLab-Macau/soundscape-player-creative-workshop/issues"
+  },
+  "homepage": "https://github.com/SoundscapeLab-Macau/soundscape-player-creative-workshop#readme",
+  "dependencies": {
+    "howler": "^2.2.3"
+  }
+}
