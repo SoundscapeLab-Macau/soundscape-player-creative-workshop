@@ -4,8 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SOUNDSCAPE Web Audio Player for Creative Workshop Series</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap');
+  </style>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/media-chrome@1/+esm"></script>
+
 </head>
 <body>
-  <h1>SOUNDSCAPE - Creative Workshop Series</h1>
+  <h1><span class="title">SOUNDSCAPE</span></h1>
+  <h2>Creative Workshop Series</h2>
+
+  
+  <div id="audiocontroller">
+    <h3>Soundscape #01</h3>
+  <media-controller audio>
+    <audio
+      loop="true"
+      slot="media"
+      src="https://stream.mux.com/O4h5z00885HEucNNa1rV02wZapcGp01FXXoJd35AHmGX7g/audio.m4a"
+    ></audio>
+    <media-control-bar>
+      <media-play-button></media-play-button>
+      <media-time-display showduration></media-time-display>
+      <media-time-range></media-time-range>
+      <media-playback-rate-button></media-playback-rate-button>
+      <media-mute-button></media-mute-button>
+      <media-volume-range></media-volume-range>
+    </media-control-bar>
+  </media-controller>
+</div>
+  <script>
+    const obj = document.createElement("audio");
+    obj.loop = true; 
+  </script>
+  <!-- script>
+    let soundscape = new Howl({
+        src: ['sounds/sound_009.mp3', 'sounds/sound_001.mp3'],
+        // html5: true,  // stream large file
+        // autoplay: true,
+        // loop: true,
+        // volume: 1,
+        onend: function() {
+          console.log('Finished! onend');
+        },
+        onload: function() {
+          // let id = this.play()
+          // console.log(`loaded file, starting playing ${id}`)
+        },
+        onplay: function(id) {
+          console.log(`playing ${id}`)
+          // start the timeout for 5 minutes here...
+          setTimeout(function() {
+            soundscape.pause();
+            btn.style.display = 'block'
+          }, 5000);
+        }
+      });
+
+      soundscape.on('end', function(){
+  // console.log('Finished!', id);
+});
+  </script -->
 </body>
 </html>
