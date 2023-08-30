@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOUNDSCAPE Web Audio Player for Creative Workshop Series</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap');
+  </style>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/media-chrome@1/+esm"></script>
+
+</head>
+<body>
+  <h1><span class="title">SOUNDSCAPE</span></h1>
+  <h2>Creative Workshop Series</h2>
+
+  
+  <div id="audiocontroller">
+    <h3>SOUNDSCAPE STORYBOARDING <br>#01</h3>
+  <media-controller audio>
+    <audio
+      loop="true"
+      slot="media"
+      src="sounds/SOUND_09_PouChaiTemple(KunIamTong).mp3"
+    ></audio>
+    <media-control-bar>
+      <media-play-button></media-play-button>
+      <media-time-display showduration></media-time-display>
+      <media-time-range></media-time-range>
+      <media-playback-rate-button></media-playback-rate-button>
+      <media-mute-button></media-mute-button>
+      <media-volume-range></media-volume-range>
+    </media-control-bar>
+  </media-controller>
+</div>
+  <script>
+    const obj = document.createElement("audio");
+    obj.loop = true; 
+  </script>
+
+</body>
+</html>
